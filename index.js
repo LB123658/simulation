@@ -66,7 +66,7 @@ function time() {
 y++;
 country_year.innerHTML = "Year: " + y;
 population.innerHTML = "Population: " + Math.floor(+population.innerHTML.split(" ")[1] * 1.015);
-gdp.innerHTML = "GDP: $" + Math.floor((+gdp.innerHTML.split("$")[1] * ((Math.random() * 3) + 0)));
+gdp.innerHTML = "GDP: $" + Math.floor((+gdp.innerHTML.split("$")[1] * ((Math.random() * 4) + 0)));
 capita.innerHTML = "GDP per capita: $" + Math.floor((+gdp.innerHTML.split("$")[1] / +population.innerHTML.split(" ")[1]));
 
 if (+capita.innerHTML.split("$")[1] < 1000) {

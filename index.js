@@ -49,7 +49,7 @@ setInterval(time, 10000);
 
 // check if you lost the game
 function check() {
-if (capita.split("$")[1] == "0") {
+if (capita.innerHTML.split("$")[1] == "0") {
 red.innerHTML = "Game over<br>" + name.value + " had a complete economic collapse in " + country_year.innerHTML.split(" ")[1] + ".<br><br><button class='button' onclick='location.reload();'>Play again</button>";
 } else if (resources.style.split("%")[0] < 1) {
 red.innerHTML = "Game over<br>" + name.value + " used all of its natural resources and its government collapsed in " + country_year.innerHTML.split(" ")[1] + ".<br><br><button class='button' onclick='location.reload();'>Play again</button>";

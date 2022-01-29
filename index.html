@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Country simulation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+<link rel='icon' href='https://upload.wikimedia.org/wikipedia/commons/b/b2/Green_square.svg' type='image/png'/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h2 id="title">Country simulator</h2>
+
+<!-- settings prompt -->
+<div id="block"></div>
+<div id="prompt">
+<h2>Select your country's info</h2>
+<p style="color:grey;font-size:12px;width:100%;">Only enter numbers. No units or %. Percents must total 100 all together.</p>
+<label>Total area (sq km)</label> <input autocomplete="off" placeholder="Area" id="area">
+<br>
+<br>
+<label>Percent water</label> <input autocomplete="off" placeholder="Water" id="water">
+<br>
+<br>
+<label>Percent mountains</label> <input autocomplete="off" placeholder="Mountains" id="mountains">
+<br>
+<br>
+<label>Percent cropland</label> <input autocomplete="off" placeholder="Cropland" id="cropland">
+<br>
+<br>
+<label>Percent forest</label> <input autocomplete="off" placeholder="Forest" id="forest">
+<br>
+<br>
+<label>Percent desert</label> <input autocomplete="off" placeholder="Desert" id="desert">
+<br>
+<br>
+<label>Percent tundra</label> <input autocomplete="off" placeholder="Tundra" id="tundra">
+<br>
+<br>
+<p style="color:grey;font-size:12px;">Customizations</p>
+<label>Country name</label> <input autocomplete="off" placeholder="Name" id="name">
+<br>
+<br>
+<label>Government type</label>
+<select id="government">
+  <option value="Unknown">Choose one</option>
+  <option value="Communism">Communism</option>
+  <option value="Socialism">Socialism</option>
+  <option value="Capitalism">Capitalism</option>
+  <option value="Facism">Facism</option>
+  <option value="Monarchy">Monarchy</option>
+  <option value="Theocracy">Theocracy</option>
+  <option value="Anarchism">Anarchism</option>
+</select>
+<br>
+<br>
+<br>
+<button class="button" style="color:white;" onclick="set()">Continue</button>
+<br>
+<br>
+</div>
+
+<!-- country stats -->
+<div id="bar">
+<div class="water" title="Water"></div>
+<div class="mountains" title="Mountains"></div>
+<div class="cropland" title="Cropland"></div>
+<div class="forest" title="Forest"></div>
+<div class="desert" title="Desert"></div>
+<div class="tundra" title="Tundra"></div>
+</div>
+
+<p class="government">Unknown government type</p>
+
+<div id="stat">
+<h2 id="year" style="color:orange;">Year: 2022</h2>
+<h2 id="kilo">Area</h2>
+<h2 id="population">Population</h2>
+<h2 id="gdp">GDP</h2>
+<h2 id="capita">GPD per capita</h2>
+<h2 id="life">Life expectancy</h2>
+</div>
+
+<script src="index.js"></script>
+</body>
+</html>

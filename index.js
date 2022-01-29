@@ -53,7 +53,7 @@ if (capita.innerHTML.split("$")[1] == "0") {
 red.innerHTML = "Game over<br>" + name.value + " had a complete economic collapse in " + country_year.innerHTML.split(" ")[1] + ".<br><br><button class='button' onclick='location.reload();'>Play again</button>";
 } else if (resources.style.width.split("%")[0] < 1) {
 red.innerHTML = "Game over<br>" + name.value + " used all of its natural resources and its government collapsed in " + country_year.innerHTML.split(" ")[1] + ".<br><br><button class='button' onclick='location.reload();'>Play again</button>";
-} else if (emissions.style.width.split("%")[0] < 99) {
+} else if (emissions.style.width.split("%")[0] > 99) {
 red.innerHTML = "Game over<br>" + name.value + " had too high of carbon emissions and was destroyed by climate change in " + country_year.innerHTML.split(" ")[1] + ".<br><br><button class='button' onclick='location.reload();'>Play again</button>";
 }
 document.getElementById("red_background").style.visibility = "visible";
@@ -66,7 +66,7 @@ function time() {
 y++;
 country_year.innerHTML = "Year: " + y;
 population.innerHTML = "Population: " + Math.floor(+population.innerHTML.split(" ")[1] * 1.015);
-gdp.innerHTML = "GDP: $" + Math.floor((+gdp.innerHTML.split("$")[1] * ((Math.random() * 4) + 0)));
+gdp.innerHTML = "GDP: $" + Math.floor((+gdp.innerHTML.split("$")[1] * ((Math.random() * 3) + 0)));
 capita.innerHTML = "GDP per capita: $" + Math.floor((+gdp.innerHTML.split("$")[1] / +population.innerHTML.split(" ")[1]));
 
 if (+capita.innerHTML.split("$")[1] < 1000) {

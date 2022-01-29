@@ -1,0 +1,111 @@
+body {
+background: #2F3137;
+}
+* {
+font-family: 'Montserrat', sans-serif;
+color: white;
+}
+::selection {
+background: #5765f2;
+}
+:focus {
+outline-width: 0px;
+}
+h2 {
+  width:100%;
+  text-align: center;
+}
+#block {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.4;
+  z-index: 1;
+}
+#prompt {
+  position: fixed;
+  top: 15%;
+  left: 15%;
+  width: 70%;
+  height: 70%;
+  border-radius: 10px;
+  z-index: 2;
+  background: white;
+  text-align: center;
+  overflow: auto;
+}
+#prompt * {
+  color: #2F3137;
+}
+#prompt span p select option{
+  font-size: 14px;
+}
+input {
+  background: transparent;
+  border: 1px solid #2F3137;
+  font-size: 14px;
+}
+.button {
+background: #5765f2;
+border-radius: 5px;
+padding: 10px 15px 10px 15px;
+font-size: 16px;
+color: white;
+border: none;
+}
+.button:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+#bar {
+  position: absolute;
+  top: 80px;
+  left: 0px;
+  width: 100%;
+  background: white;
+  height: 50px;
+  overflow: hidden;
+  display: flex;
+}
+#bar div {
+  height: 50px;
+  width: 16.66%;
+  margin: 0px;
+}
+.water {
+  background: #3238db;
+}
+.mountains {
+  background: grey;
+}
+.cropland {
+  background: #57b55f;
+}
+.forest {
+  background: green;
+}
+.desert {
+  background: #b39c2d;
+}
+.tundra {
+  background: #e6edf5;
+}
+
+.government {
+  position: absolute;
+  top: 130px;
+  left: 0px;
+  width: 100%;
+  text-align: center;
+  color: #ffc000;
+  font-size: 15px;
+}
+#stat {
+  position: absolute;
+  top: 160px;
+  left: 10%;
+  width: 80%;
+}

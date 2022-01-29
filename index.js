@@ -88,6 +88,8 @@ r = r - 1;
 resources.style.width = r + "%";
 if (+capita.innerHTML.split("$")[1] < 300000) {
 emissions.style.width = (+capita.innerHTML.split("$")[1] / 3000) + "%";
+} else {
+emissions.style.width = (+capita.innerHTML.split("$")[1] / 10000) + "%";
 }
 if (+emissions.style.width.split("%")[0] < 25) {
 emissions.style.background = "green";

@@ -56,7 +56,7 @@ red.innerHTML = "Game over<br>" + name.value + " used all of its natural resourc
 } else if (emissions.style.width.split("%")[0] < 99) {
 red.innerHTML = "Game over<br>" + name.value + " had too high of carbon emissions and was destroyed by climate change in " + country_year.innerHTML.split(" ")[1] + ".<br><br><button class='button' onclick='location.reload();'>Play again</button>";
 }
-red.style.visibility = "visible";
+document.getElementById("red_background").style.visibility = "visible";
 }
 
 // generate all values

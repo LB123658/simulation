@@ -50,13 +50,13 @@ setInterval(time, 10000);
 // check if you lost the game
 function check() {
 if (capita.innerHTML.split("$")[1] == "0") {
-red.innerHTML = "Game over<br>" + name.value + " had a complete economic collapse in " + country_year.innerHTML.split(" ")[1] + ".<br><br><button class='button' onclick='location.reload();'>Play again</button>";
+red.innerHTML = "Game over<br>" + country_name.value + " had a complete economic collapse in " + country_year.innerHTML.split(" ")[1] + ".<br><br><button class='button' onclick='location.reload();'>Play again</button>";
 document.getElementById("red_background").style.visibility = "visible";
 } else if (resources.style.width.split("%")[0] < 1) {
-red.innerHTML = "Game over<br>" + name.value + " used all of its natural resources and its government collapsed in " + country_year.innerHTML.split(" ")[1] + ".<br><br><button class='button' onclick='location.reload();'>Play again</button>";
+red.innerHTML = "Game over<br>" + country_name.value + " used all of its natural resources and its government collapsed in " + country_year.innerHTML.split(" ")[1] + ".<br><br><button class='button' onclick='location.reload();'>Play again</button>";
 document.getElementById("red_background").style.visibility = "visible";
 } else if (emissions.style.width.split("%")[0] > 99) {
-red.innerHTML = "Game over<br>" + name.value + " had too high of carbon emissions and was destroyed by climate change in " + country_year.innerHTML.split(" ")[1] + ".<br><br><button class='button' onclick='location.reload();'>Play again</button>";
+red.innerHTML = "Game over<br>" + country_name.value + " had too high of carbon emissions and was destroyed by climate change in " + country_year.innerHTML.split(" ")[1] + ".<br><br><button class='button' onclick='location.reload();'>Play again</button>";
 document.getElementById("red_background").style.visibility = "visible";
 } else {
 document.getElementById("red_background").style.visibility = "hidden";

@@ -14,6 +14,7 @@ const economicRating = [1,3,4,5,4,3,2,desertEconomicRating[Math.round(Math.rando
 var biomeNames = ["Tundra","Taiga","Temperate forest","Tropical Rainforest","Grass Savanna","Mountainous","Steppe","Desert"];
 var currentYear = 0;
 var disasters = ["was hit by an asteroid that destroyed all multicellular life on Earth","and surrounding areas have been destroyed by a nuclear attack","was hit by a devastating earthquake","has erupted into civil war after a failed coup","has been burnt to the gound by raging wildfires","and surround areas' water supply was severly contaminated","is the epicenter of a deadly unknown virus outbreak","faces severe food shortages after crops failed nationwide","was hit by an unexpected flash flood","was attacked by terrorists"];
+var speedType;
 
 function show(elmnt) {
 elmnt.style.visibility = "visible";
@@ -21,19 +22,19 @@ elmnt.style.visibility = "visible";
 function hide(elmnt) {
 elmnt.style.visibility = "hidden";
 }
-function launch() {
+function launch(simType) {
 if (confirm("Do you want to begin the simulation?") == true) {
 begin();
-}
-}
-
-
-function begin(simType) {
     if (simType == "normal") {
         var speedSetting = 1000;
     } else if (simType == "instant") {
         var speedSetting = 0;
     }
+}
+}
+
+
+function begin() {
 var countryName = document.getElementById("countryName").value;
 var capital = document.getElementById("capital").value;
 var biome = biomeNames[document.getElementById("biome").value];

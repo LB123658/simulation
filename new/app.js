@@ -30,9 +30,9 @@ begin();
 
 function begin(simType) {
     if (simType == "normal") {
-        var speed = 1000;
+        var speedSetting = 1000;
     } else if (simType == "instant") {
-        var speed = 0;
+        var speedSetting = 0;
     }
 var countryName = document.getElementById("countryName").value;
 var capital = document.getElementById("capital").value;
@@ -134,7 +134,7 @@ var disasterCode = Math.round(Math.random() * disasters.length);
 document.getElementById("news").innerHTML = "<p style='color:red'>" + y + " - " + capital + " " + disasters[disasterCode] + "</p>" + document.getElementById("news").innerHTML;
 population = population * (disasterCode / 10);
 }
-},speed);
+},speedSetting);
 //end of interval
 
 app.innerHTML = `

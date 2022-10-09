@@ -29,10 +29,10 @@ begin();
 
 
 function begin(simType) {
-    if (simType == normal) {
-        speed = 1000;
-    } else if (simType == instant) {
-        speed = 0;
+    if (simType == "normal") {
+        var speed = 1000;
+    } else if (simType == "instant") {
+        var speed = 0;
     }
 var countryName = document.getElementById("countryName").value;
 var capital = document.getElementById("capital").value;

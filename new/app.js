@@ -29,9 +29,9 @@ begin();
 
 
 function begin(simType) {
-    if (simType = normal) {
+    if (simType == normal) {
         speed = 1000;
-    } else if (simType = instant) {
+    } else if (simType == instant) {
         speed = 0;
     }
 var countryName = document.getElementById("countryName").value;

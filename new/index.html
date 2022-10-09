@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Simulator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- settings -->
+<div id="settings">
+<h2>Customize your country</h2>
+<p>Country name</p>
+<input type="text" placeholder="Name" id="countryName" autocomplete="off">
+<hr>
+<br>
+
+<p>Capital city</p>
+<input type="text" placeholder="City name" id="capital" autocomplete="off">
+<hr>
+<br>
+
+<p>Biome</p>
+<select id="biome">
+<option>Choose one</option>
+<option value="0">Tundra</option>
+<option value="1">Taiga</option>
+<option value="2">Temperate forest</option>
+<option value="3">Tropical Rainforest</option>
+<option value="4">Grass savanna</option>
+<option value="5">Mountainous</option>
+<option value="6">Steppe</option>
+<option value="7">Desert</option>
+</select>
+<hr>
+<br>
+
+<p>Area <i>(Range: 0 - 10,000,000km²)</i></p>
+<input type="range" min="0" max="10000000" id="area" onmouseup="alert('Area = ' + this.value + ' km²')">
+<hr>
+<br>
+
+<p>Population</p>
+<input type="number" placeholder="Population" id="population" autocomplete="off">
+<hr>
+<br>
+
+<p>Life expectancy <i>(Range: 50 - 80)</i></p>
+<input type="range" min="50" max="80" id="lifeExpectancy" onmouseup="alert('Area = ' + this.value + ' years')">
+<hr>
+<br>
+
+<p>Government</p>
+<select id="government">
+<option>Choose one</option>
+<option value="0">Dictatorship</option>
+<option value="1">Monarchy</option>
+<option value="2">Direct democracy</option>
+<option value="3">Democratic republic</option>
+<option value="4">Oligarchy</option>
+<option value="5">Anarchy</option>
+</select>
+<hr>
+<br>
+<h2>Confirm settings</h2>
+<button id="submit" onclick="launch()">Begin simulation</button>
+</div>
+
+<!-- app -->
+<div id="app"></div>
+
+<script src="app.js"></script>
+</body>
+</html>

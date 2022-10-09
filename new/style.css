@@ -1,0 +1,60 @@
+body {
+  background: white;
+  font-family: arial;
+}
+::selection {
+  color: #127BE3;
+  background: lightblue;
+}
+* {
+  outline: none;
+}
+select {
+  user-select: none;
+  -webkit-user-select: none;
+  border: 1px solid black;
+}
+hr {
+  border: 0.5px solid black;
+}
+input {
+  border: 1px solid black;
+  outline: none;
+}
+input[type=range] {
+  accent-color: #127BE3;
+}
+button {
+  background: transparent;
+  border: 1px solid black;
+}
+button:hover {
+  color: #127BE3;
+}
+button:focus {
+  color: #127BE3;
+  background: lightblue;
+}
+.off {
+  pointer-events:none;
+  user-select: none;
+  -webkit-user-select: none;
+  color: lightgrey;
+  cursor: default;
+}
+.off * {
+  color: lightgrey;
+}
+.off input {
+  border: 1px solid lightgrey;
+  color: lightgrey;
+}
+
+#app {
+  position: absolute;
+  top: 1%;
+  left: 1%;
+  height: 98%;
+  width: 98%;
+  visibility: hidden;
+}

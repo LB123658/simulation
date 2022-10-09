@@ -28,7 +28,7 @@ begin();
 }
 
 
-function begin() {
+function begin(speed) {
 var countryName = document.getElementById("countryName").value;
 var capital = document.getElementById("capital").value;
 var biome = biomeNames[document.getElementById("biome").value];
@@ -129,7 +129,7 @@ var disasterCode = Math.round(Math.random() * disasters.length);
 document.getElementById("news").innerHTML = "<p style='color:red'>" + y + " - " + capital + " " + disasters[disasterCode] + "</p>" + document.getElementById("news").innerHTML;
 population = population * (disasterCode / 10);
 }
-},1000);
+},speed);
 //end of interval
 
 app.innerHTML = `

@@ -16,6 +16,13 @@ var currentYear = 0;
 var disasters = ["was hit by an asteroid that destroyed all multicellular life on Earth","and surrounding areas have been destroyed by a nuclear attack","was hit by a devastating earthquake","has erupted into civil war after a failed coup","has been burnt to the gound by raging wildfires","and surround areas' water supply was severly contaminated","is the epicenter of a deadly unknown virus outbreak","faces severe food shortages after crops failed nationwide","was hit by an unexpected flash flood","was attacked by terrorists"];
 var speedType;
 
+//mobile size
+if (navigator.platform == "iPhone") {
+    document.body.style.zoom = "2";
+} else if (navigator.platform == "Android") {
+    document.body.style.zoom = "2";
+}
+
 function show(elmnt) {
 elmnt.style.visibility = "visible";
 }
@@ -149,6 +156,7 @@ app.innerHTML = `
 <hr>
 <h2>Download simulation data</h2>
 <p style="color:rgb(18, 123, 227);cursor:pointer;" title="Click to download file" onclick="downloadResults()">Download results</p>
+<br><br>
 `;
 }
 

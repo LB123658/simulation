@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 body {
   background: white;
   font-family: arial;
@@ -8,6 +9,7 @@ body {
 }
 * {
   outline: none;
+  font-family: 'Montserrat', sans-serif;
 }
 select {
   user-select: none;
@@ -20,9 +22,10 @@ hr {
 input {
   border: 1px solid black;
   outline: none;
+  width: 99%;
 }
 input[type=range] {
-  accent-color: #127BE3;
+  accent-color: black;
 }
 button {
   background: transparent;

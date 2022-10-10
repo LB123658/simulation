@@ -1,0 +1,22 @@
+{
+	"name":"Country Simulator",
+	"short_name":"Simulator",
+	"start_url":"index.html",
+	"display":"standalone",
+	"background_color":"white",
+	"theme_color":"white",
+	"scope": ".",
+	"description":"Create a country and see what happens.",
+	"icons":[
+	{
+	"src":"images/icon-192x192.png",					
+	"sizes":"192x192",
+	"type":"image/png"
+	},
+	{
+	"src":"images/icon-512x512.png",
+	"sizes":"512x512",
+	"type":"image/png"
+	}
+]
+}

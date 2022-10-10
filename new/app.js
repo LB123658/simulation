@@ -22,19 +22,14 @@ elmnt.style.visibility = "visible";
 function hide(elmnt) {
 elmnt.style.visibility = "hidden";
 }
-function launch(simType) {
+function launch(velocity) {
 if (confirm("Do you want to begin the simulation?") == true) {
-begin();
-    if (simType == "normal") {
-        var speedSetting = 1000;
-    } else if (simType == "instant") {
-        var speedSetting = 0;
-    }
+begin(velocity);
 }
 }
 
 
-function begin() {
+function begin(velocity) {
 var countryName = document.getElementById("countryName").value;
 var capital = document.getElementById("capital").value;
 var biome = biomeNames[document.getElementById("biome").value];
@@ -57,7 +52,7 @@ document.body.onkeyup = function(e){
 }
 
 //interval
-var sim = setInterval(function() {
+function simulator() {
 //population
 var growthRate;
 if (lifeExpectancy > 50 && lifeExpectancy < 55) {
@@ -135,8 +130,9 @@ var disasterCode = Math.round(Math.random() * disasters.length);
 document.getElementById("news").innerHTML = "<p style='color:red'>" + y + " - " + capital + " " + disasters[disasterCode] + "</p>" + document.getElementById("news").innerHTML;
 population = population * (disasterCode / 10);
 }
-},speedSetting);
-//end of interval
+}
+//run interval
+var sim = setInterval(simulator,velocity);
 
 app.innerHTML = `
 <h2> ${countryName}</h2>

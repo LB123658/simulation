@@ -3,6 +3,8 @@
 <head>
 <title>Simulator</title>
 <link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<link rel='icon' href='images/icon-512x512.png' type='image/png'/>
 </head>
 <body>
 <!-- settings -->
@@ -69,6 +71,26 @@
 <!-- app -->
 <div id="app"></div>
 
+<!-- for pwa -->
+<script>
+	window.addEventListener('load', () => {
+	registerSW();
+	});
+
+	// Register the Service Worker
+	async function registerSW() {
+	if ('serviceWorker' in navigator) {
+		try {
+		await navigator
+				.serviceWorker
+				.register('serviceworker.js');
+		}
+		catch (e) {
+		console.log('SW registration failed');
+		}
+	}
+	}
+</script>
 <script src="app.js"></script>
 </body>
 </html>

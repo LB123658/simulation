@@ -18,9 +18,9 @@ var speedType;
 
 //mobile size
 if (navigator.platform == "iPhone") {
-    document.body.style.zoom = "3.5";
+    document.getElementsByTagName("link")[0].href = "mobile.css";
 } else if (navigator.platform == "Android") {
-    document.body.style.zoom = "3.5";
+    document.getElementsByTagName("link")[0].href = "mobile.css";
 }
 
 function show(elmnt) {

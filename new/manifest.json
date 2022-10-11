@@ -3,8 +3,8 @@
 	"short_name":"Simulator",
 	"start_url":"index.html",
 	"display":"standalone",
-	"background_color":"white",
-	"theme_color":"white",
+	"background_color":"#202124",
+	"theme_color":"#202124",
 	"scope": ".",
 	"description":"Create a country and see what happens.",
 	"icons":[

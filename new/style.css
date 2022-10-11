@@ -2,6 +2,7 @@
 body {
   background: white;
   font-family: arial;
+  overflow-x: hidden;
 }
 ::selection {
   color: #127BE3;

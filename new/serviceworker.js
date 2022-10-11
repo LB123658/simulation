@@ -1,4 +1,4 @@
-var staticCacheName = "simulation";
+var staticCacheName = "simulator";
 
 self.addEventListener("install", function (e) {
 e.waitUntil(

@@ -13,7 +13,7 @@ var desertEconomicRating = [1,5]
 const economicRating = [1,3,4,5,4,3,2,desertEconomicRating[Math.round(Math.random())]];
 var biomeNames = ["Tundra","Taiga","Temperate forest","Tropical Rainforest","Grass Savanna","Mountainous","Steppe","Desert"];
 var currentYear = 0;
-var disasters = ["was hit by an asteroid that destroyed all multicellular life on Earth","and surrounding areas have been destroyed by a nuclear attack","was hit by a devastating earthquake","has erupted into civil war after a failed coup","has been burnt to the gound by raging wildfires","and surround areas' water supply was severly contaminated","is the epicenter of a deadly unknown virus outbreak","faces severe food shortages after crops failed nationwide","was hit by an unexpected flash flood","was attacked by terrorists"];
+var disasters = ["was hit by an asteroid that destroyed all multicellular life on Earth","and surrounding areas have been destroyed by a nuclear attack","was hit by a devastating earthquake","has erupted into civil war after a failed coup","has been burnt to the ground by raging wildfires","and surround areas' water supply was severly contaminated","is the epicenter of a deadly unknown virus outbreak","faces severe food shortages after crops failed nationwide","was hit by an unexpected flash flood","was attacked by terrorists"];
 var speedType;
 
 //mobile size
